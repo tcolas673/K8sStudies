@@ -8,3 +8,5 @@ spec:
     - targetPorts: 80
       port: 80
       nodePort: 30008
+  selector:
+    # label info from desired pod/s
