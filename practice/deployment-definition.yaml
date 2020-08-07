@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-deployment
+  lables:
+    app:
+    type:
+spec:
+  template:
+  replicas: 3
+  selector: 
+    matchLabels:
+    type: front-end # desired label info to look for
