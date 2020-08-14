@@ -1,0 +1,9 @@
+# just the keys
+apiVersion:
+kind:
+metadata:
+  labels:
+spec:
+  containers:
+    - name:
+      image:
