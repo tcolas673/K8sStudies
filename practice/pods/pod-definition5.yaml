@@ -1,0 +1,30 @@
+apiVersion:
+kind:
+metadata:
+  labels:
+spec:
+  containers:
+    - name:
+      image:
+
+apiVersion:
+kind:
+metadata:
+  labels:
+spec:
+  containers:
+  - name:
+    image:
+
+apiVersion:
+kind:
+metadata:
+  labels:
+spec:
+  containers:
+    - name:
+      image:
+apiVersion:
+kind:
+metadata:
+spec:

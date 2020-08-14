@@ -2,9 +2,15 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: myapps-pod
-  labels: front-end
+  labels: 
+    # you can put whatever key and value pairs you want here
+    app: myapp
+    type: front-end
 spec:
   containers:
     - name: mypod
       image: nginx
-      
+  
+# two possible versions possible
+# v1 for pods and services
+# apps/vl for replicasets and deployments
