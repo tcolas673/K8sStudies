@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+# must be apps/v1 for ReplicaSet bc new
+# must be v1 for ReplicationController
+kind: ReplicaSet
+# can be ReplicationController or ReplicaSet if selector specified
+metadata:
+  name: myapp-replicaset
+  labels:
+    type: front-end
+spec:
+  replicas:
+  # number of desired pods in replication shit
+  template:
+    # move all the pod shit in here except for apiversion and kind
+  selector:
+   # only in replication sets not in replication controllers
+    matchLabels:
+ 
