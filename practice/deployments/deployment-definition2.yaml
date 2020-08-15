@@ -1,5 +1,5 @@
 apiVersion: apps/vl
-kind: ReplicaSet
+kind: Deployment
 metadata:
   labels:
     type: front-end
@@ -17,5 +17,5 @@ spec:
         - name: mypod
           image: nginx
 
-# biggest difference bwn the 2 is ReplicaSet has selector and is 
-# included in only apps/vl while ReplicationController is in v1 only
+# only difference between replicaSet was that the kind is Deployment
+# can use Deployment for rolling updates and rolling them back
